@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pomodoro Clock</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Main Container (220px x 460px) -->
+  <div class="container">
+    
+    <!-- Upper Part: Timer Display -->
+    <div class="top-section">
+      <h2 id="timer-label">Session 1</h2>
+      <div class="timer-display">
+        <span id="time-left">25:00</span>
+      </div>
+    </div>
+
+    <!-- Bottom Part: Controls -->
+    <div class="bottom-section">
+      
+      <!-- Time Adjustment Section -->
+      <div class="settings">
+        <!-- Session Controls -->
+        <div class="control-box">
+          <p>session time</p>
+          <span id="session-length">25 min</span>
+          <div class="btn-group">
+            <button id="session-decrement" class="adjust-btn">-</button>
+            <button id="session-increment" class="adjust-btn">+</button>
+          </div>
+        </div>
+
+        <!-- Break Controls -->
+        <div class="control-box">
+          <p>break time</p>
+          <span id="break-length">5 min</span>
+          <div class="btn-group">
+            <button id="break-decrement" class="adjust-btn">-</button>
+            <button id="break-increment" class="adjust-btn">+</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="action-buttons">
+        <button id="start_stop">Start</button>
+        <button id="reset">Reset</button>
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

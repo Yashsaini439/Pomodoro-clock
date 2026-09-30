@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4be82;
+}
+
+/* Container styling & centering */
+.container {
+  width: 220px;
+  height: 460px;
+  background-color: rgba(40, 35, 30, 0.85); /* Semi-transparent dark background */
+  border-radius: 12px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  color: #fff;
+}
+
+/* Upper Section */
+.top-section {
+  flex: 1;
+  background-color: #332d28;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+}
+
+#timer-label {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.timer-display {
+  width: 100%;
+  height: 140px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+#time-left {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #00bcd4;
+}
+
+/* Bottom Section */
+.bottom-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 15px 10px;
+}
+
+.settings {
+  display: flex;
+  justify-content: space-between;
+  border-top:  1px dotted;
+  border-bottom: 1px dotted;
+  padding-bottom: 25px;
+  padding-top: 25px;
+}
+
+.control-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 48%;
+}
+
+.control-box p {
+  font-size: 0.75rem;
+  color: #aaa;
+  margin-bottom: 4px;
+}
+
+.control-box span {
+  font-size: 0.9rem;
+  color: #00bcd4;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+.btn-group {
+  display: flex;
+  gap: 8px;
+}
+
+.adjust-btn {
+  background-color: #1a1715;
+  color: white;
+  border: none;
+  width: 28px;
+  height: 24px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.adjust-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.action-buttons button {
+  flex: 1;
+  padding: 10px 0;
+  background-color: #1a1715;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.9rem;
+}
+
+.action-buttons button:hover {
+  background-color: #000;
+}
